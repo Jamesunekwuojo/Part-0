@@ -5,7 +5,8 @@ sequenceDiagram
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
     server-->>browser: HTML document
-    Note right of browser: The single HTML document fetch from the server, it's content is being manipulated by the Javascript that 
-    executes in the  browser. Unlike the traditional web apps in which each page is being fetched seprately, here only the HTML page is 
-    being fetched, and it's content is being manipulated by JavaScript.
+    Note right of browser: The single HTML document is fetched from the server. Its content is being manipulated by the JavaScript that 
+    executes in the browser. Unlike traditional web apps, where each page is fetched separately, here only the HTML page is 
+    fetched, and its content is manipulated by JavaScript.
+
     
