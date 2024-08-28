@@ -9,7 +9,7 @@ sequenceDiagram
     Note right of browser: Unlike traditional web apps where each page is fetched separately, only the HTML page is fetched and its content is manipulated by JavaScript.
     activate browser
     browser-->>server:POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
-    Note right of server: when a user creates a new note that's the form input is being filled and 'save' button is pressed. The browser makes a POST request to this URL. And it contains the new note which is being typed  as JSON data
+    Note left of server: when a user creates a new note that's the form input is being filled and 'save' button is pressed. The browser makes a POST request to this URL. And it contains the new note which is being typed  as JSON data
     activate server
     server-->>browser:The server responds with the status code 201 which means the new note is succesffully created
     Note right of browser: The Content-Type header of the request tells the server that the included data is represented in JSON format which enables the server to correctly parse data
